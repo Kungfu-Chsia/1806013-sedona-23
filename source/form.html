@@ -49,21 +49,21 @@
         <h2 class="feedback__title">Оставьте свой отзыв</h2>
           <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
-      <form class="filter__impression" method="get" action="https://echo.htmlacademy.ru/">
-        <fieldset class="filter__form">
-          <legend class="filter_title">ваше общее впечатление:</legend>
-            <ul class="filter__list">
-              <li class="filter__option filter__radio">
-                <input class="visually-hidden filter__input-radio filter__input" type="radio" name="impression" value="positive" id="filter-positive" checked>
-                <label for="filter-positive">Скорее положительное</label>
+      <form class="impression" method="get" action="https://echo.htmlacademy.ru/">
+        <fieldset class="impression__form">
+          <legend class="impression__title">ваше общее впечатление:</legend>
+            <ul class="impression__list">
+              <li class="impression__option">
+                <input hidden class="impression__input" type="radio"  name="impression" value="positive" id="impression-positive" checked>
+                <label for="impression-positive">Скорее положительное</label>
               </li>
-              <li class="filter__option filter__radio">
-                <input class="visually-hidden filter__input-radio filter__input" type="radio" name="impression" value="negative" id="filter-negative">
-                <label for="filter-negative">Скорее отрицательное</label>
+              <li class="impression__option">
+                <input hidden class="impression__input" type="radio" name="impression" value="negative" id="impression-negative">
+                <label for="impression-negative">Скорее отрицательное</label>
               </li>
-              <li class="filter__option filter__radio">
-                <input class="visually-hidden filter__input-radio filter__input" type="radio" name="impression" value="cant-answer" id="filter-cant-answer">
-                <label for="filter-cant-answer">Затрудняюсь ответить</label>
+              <li class="impression__option">
+                <input hidden class="impression__input" type="radio" name="impression" value="cant-answer" id="impression-cant-answer">
+                <label for="impression-cant-answer">Затрудняюсь ответить</label>
               </li>
             </ul>
         </fieldset>
@@ -86,40 +86,39 @@
           <label for="email">Электронная почта*:</label>
           <input type="email" name="email" placeholder="Введите e-mail" required>
         </fieldset>
-      </form>
 
-      <fieldset class="sights">
-        <legend>посещённые достопримечательности:</legend>
-          <ul class="sights__list">
-            <li class="sights__option filter-checkbox">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bridge" id="filter-bridge" checked>
-              <label for="filter-bridge">Мост Дьявола</label>
-            </li>
-            <li class="sights__option filter-checkbox">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="mountain" id="filter-mountain" checked>
-              <label for="filter-mountain">гора-колокол</label>
-            </li>
-            <li class="sights__option filter-checkbox">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="park" id="filter-park" checked>
-              <label for="filter-park">слайд-парк</label>
-            </li>
-            <li class="sights__option filter-checkbox">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="mounts" id="filter-mounts">
-              <label for="filter-mounts">красные скалы</label>
-            </li>
-          </ul>
-      </fieldset>
+        <fieldset class="sights">
+          <legend>посещённые достопримечательности:</legend>
+            <ul class="sights__list">
+              <li class="sights__option">
+                <input hidden class="sights__input" type="checkbox" name="bridge" id="sights-bridge" checked>
+                <label for="sights-bridge">Мост Дьявола</label>
+              </li>
+              <li class="sights__option">
+                <input hidden class="sights__input" type="checkbox" name="mountain" id="sights-mountain" checked>
+                <label for="sights-mountain">гора-колокол</label>
+              </li>
+              <li class="sights__option">
+                <input hidden class="sights__input" type="checkbox" name="park" id="sights-park" checked>
+                <label for="sights-park">слайд-парк</label>
+              </li>
+              <li class="sights__option">
+                <input hidden class="sights__input" type="checkbox" name="mounts" id="sights-mounts">
+                <label for="sights-mounts">красные скалы</label>
+              </li>
+            </ul>
+        </fieldset>
 
-      <form class="emotion" action="https://echo.htmlacademy.ru/courses" method="post">
-        <legend class="emotion__title">Опишите свои эмоции:</legend>
-          <textarea class="emotion__textarea" id="letter" name="letter" placeholder="Опишите подробно все свои восторги "></textarea>
+        <fieldset class="emotion">
+          <legend class="emotion__title">Опишите свои эмоции:</legend>
+            <textarea class="emotion__textarea" id="letter" name="letter" placeholder="Опишите подробно все свои восторги "></textarea>
+        </fieldset>
+        <div class="send-feedback">
+          <button class="send-feedback__button" type="submit" aria-label="отправить отзыв">отправить отзыв</button>
+          <span class="send-feedback__text">* — обязательные поля</span>
+        </div>
       </form>
     </section>
-    <div class="send-feedback">
-      <button class="send-feedback__button" type="submit" aria-label="отправить отзыв">отправить отзыв</button>
-      <span class="send-feedback__text">* — обязательные поля</span>
-    </div>
-
   </main>
 
   <footer class="page-footer">
