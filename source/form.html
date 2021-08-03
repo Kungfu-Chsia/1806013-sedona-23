@@ -82,9 +82,9 @@
         <fieldset class="contacts">
           <legend class="contacts__title">контактная информация:</legend>
           <label for="contacts__tel">Контактный телефон*:</label>
-          <input type="tel" id="tel" name="tel" placeholder="Введите телефон" required>
+          <input type="tel" id="contacts__tel" name="tel" placeholder="Введите телефон" required>
           <label for="email">Электронная почта*:</label>
-          <input type="email" name="email" placeholder="Введите e-mail" required>
+          <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
         </fieldset>
 
         <fieldset class="sights">
@@ -103,6 +103,7 @@
                 <label for="sights-park">слайд-парк</label>
               </li>
               <li class="sights__option">
+                <input hidden class="sights__input" type="checkbox" name="mounts" id="sights-mounts" checked>
                 <label for="sights-mounts">красные скалы</label>
               </li>
             </ul>
@@ -147,7 +148,7 @@
 
   <section class="modal-failure">
     <div class="modal-failure__wrapper">
-      <h3 class="modal-failure__title">что-то пошло не так!</h2>
+      <h3 class="modal-failure__title">что-то пошло не так!</h3>
       <p class="modal-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="modal-failure__button" type="button">ок</button>
     </div>
@@ -155,7 +156,7 @@
 
   <section class="modal-success">
     <div class="modal-success__wrapper">
-      <h3 class="modal-success__title">ваш отзыв отправлен</h2>
+      <h3 class="modal-success__title">ваш отзыв отправлен</h3>
       <p class="modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
     </div>
     <div class="modal-success__wrapper">
