@@ -1,0 +1,27 @@
+.feature {
+  background-color: $colorblue;
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.feature__title {
+  font-size: 18px;
+  line-height: 26px;
+  color: $colorwhite;
+}
+
+.feature__number {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $colorwhite;
+}
+
+
+.feature__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $colorwhite;
+}

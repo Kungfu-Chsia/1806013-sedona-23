@@ -1,27 +1,42 @@
-// global
+//global
 @import "global/fonts.scss";
 @import "global/global.scss";
+
+//blocks
+@import "blocks/body.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/welcome-foto.scss";
+@import "blocks/intro.scss";
+@import "blocks/feature.scss";
+@import "blocks/advantages.scss";
+@import "blocks/other-features.scss";
+@import "blocks/hotel-search.scss";
+@import "blocks/page-footer.scss";
+
+/*
+@import "global/fonts.scss";
+
 @import "global/variables.scss";
+//@import "global/normalize";
+@import "global/global.scss";
 
 //blocks
 @import "blocks/advantages.scss";
-@import "blocks/body.scss";
+@import "blocks/page-header.scss";
 @import "blocks/contacts.scss";
 @import "blocks/copyright.scss";
 @import "blocks/emotion.scss";
-@import "blocks/feature.scss";
+
 @import "blocks/feedback.scss";
-@import "blocks/hotel-search.scss";
+
 @import "blocks/impression.scss";
-@import "blocks/intro.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/map.scss";
 @import "blocks/modal-failure.scss";
 @import "blocks/modal-success.scss";
 @import "blocks/no-doubt.scss";
-@import "blocks/other-features.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/page-header.scss";
+
+
 @import "blocks/page-main.scss";
 @import "blocks/personal.scss";
 @import "blocks/photos.scss";
@@ -29,3 +44,5 @@
 @import "blocks/site-list.scss";
 @import "blocks/social.scss";
 
+
+*/

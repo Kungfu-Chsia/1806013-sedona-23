@@ -9,9 +9,6 @@
   </head>
   <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Sity of Sedona">
-    </a>
 
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +24,10 @@
         </svg>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+        <a class="main-nav__logo">
+          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Sity of Sedona">
+        </a>
+        <ul class="main-nav__list site-list list-style">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
           </li>
@@ -44,8 +44,11 @@
       </div>
     </nav>
   </header>
+
   <main class="page-main">
-    <h1 class="visually-hidden">Добро пожаловать в городок Седона</h1>
+    <section class="welcome-foto">
+      <h1 class="visually-hidden">Добро пожаловать в городок Седона</h1>
+    </section>
 
   <section class="intro">
     <div class="intro__wrapper">
@@ -59,7 +62,7 @@
   <section class="feature">
     <div class="feature__wrapper">
       <h2 class="feature__title">Настоящий городок</h2>
-        <span>&mdash;№1&mdash;</span>
+        <span class="feature__number">&mdash;№1&mdash;</span>
         <p class="feature__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
     </div>
     <div class="feature__img-wrapper">
@@ -70,7 +73,7 @@
   <section class="advantages">
     <h2 class="visually-hidden">Преимущества городка</h2>
       <div class="advantages__wrapper">
-        <ul class="advantages__list">
+        <ul class="advantages__list list-style">
           <li class="advantages__item">
             <img src="img/icon-house.svg" width="39" height="37" alt="icon-house">
             <h3 class="advantages__title advantages__title--main">Жилье</h3>
@@ -93,7 +96,7 @@
   <section class="feature">
     <div class="feature__wrapper">
       <h2 class="feature__title">Там есть мост дьявола</h2>
-        <span>&mdash;№2&mdash;</span>
+        <span class="feature__number">&mdash;№2&mdash;</span>
         <p class="feature__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
     </div>
     <div class="feature__img-wrapper">
@@ -104,20 +107,20 @@
   <section class="other-features">
     <h2 class="visually-hidden">Прочие преимущества</h2>
       <div class="other-features__wrapper">
-        <ul class="other-feature-list">
+        <ul class="other-feature-list list-style">
           <li class="other-feature-list__item">
             <h3 class="other-feature-list__title">Небольшая площадь</h3>
-            <span>&mdash;№3&mdash;</span>
+            <span class="other-features__number">&mdash;№3&mdash;</span>
             <p class="other-feature-list__text">Все интересные места находятся очень близко</p>
           </li>
           <li class="other-feature-list__item">
             <h3 class="other-feature-list__title">Красивая дорога</h3>
-            <span>&mdash;№4&mdash;</span>
+            <span class="other-features__number">&mdash;№4&mdash;</span>
             <p class="other-feature-list__text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
           </li>
           <li class="other-feature-list__item">
             <h3 class="other-feature-list__title">Мало туристов</h3>
-            <span>&mdash;№4&mdash;</span>
+            <span class="other-features__number">&mdash;№5&mdash;</span>
             <p class="other-feature-list__text">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
@@ -143,7 +146,7 @@
         <a class="page-footer__hashtag hashtag" href="">#visitsedona</a>
       </div>
       <div class="page-footer__social social">
-        <ul class="social__list">
+        <ul class="social__list list-style">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><img aria-hidden="true" src="img/icon-twitter.svg" width="18" height="15" alt="Twitter"><span class="visually-hidden">Мы в Twitter</span></a>
           </li>

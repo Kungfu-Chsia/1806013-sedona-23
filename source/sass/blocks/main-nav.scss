@@ -1,0 +1,28 @@
+.main-nav {
+  position: relative;
+  padding: 0 72px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 138px;
+  height: 70;
+  margin-left: -69px;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+}

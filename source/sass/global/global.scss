@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list-style {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: $colorblue;
+  color: $colorwhite;
+}
+
+.hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  color: $colorblack;
+}
+
+$colorwhite: #ffffff;
+$colorblack: #000000;
+$colorblue: #81b3d2;
+$colordesktopcontrols: #666666;
+$colormobilecontrols: #5c6870;
+$colorhovermobiles: #333333;
+$colorlightgrey: #eeeeee;
+$colordowngrey: #d5d5d5;
+$colorextralightgrey: #f2f2f2;
+$colorgrey: #e6e6e6;
+$colormediagrey: #eaeaea;
+$colorhoverblue: #669ec0;
+$colordownblue: #5496bd;
+$colordisabled: #e5e5e5;
+$colormenucurrent: #766357;
