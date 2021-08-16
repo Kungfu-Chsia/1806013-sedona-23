@@ -1,0 +1,19 @@
+
+.feedback__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.feedback__title {
+  margin-top: 36px;
+}
+
+.feedback__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 37px;
+}

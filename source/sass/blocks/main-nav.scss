@@ -1,28 +1,85 @@
 .main-nav {
   position: relative;
   padding: 0 72px;
+  height: 56px;
   line-height: 26px;
   font-weight: bold;
-  color: #000000;
+  color: $black;
 }
 
 
-.main-header-logo {
+.main-nav__logo img {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 138px;
-  height: 70;
-  margin-left: -69px;
+  width: 102px;
+  height: 34;
+  transform: translateX(-50%);
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
+  padding-bottom: 14px;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   align-items: center;
+  justify-content: space-between;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav__list {
+    flex-direction: column;
+  }
+
+  .main-nav__item {
+    color: $white;
+    width: 320px;
+  }
+
+  & a {
+    color: $white;
+  }
+
+  & a:active {
+    opacity: 0.3;
+  }
+
+  .button {
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .button:hover {
+    background-color: $hover-blue;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__item {
+    &a {
+      color: $black;
+    }
+
+    &a:hover {
+      color: $hover-blue;
+    }
+
+    &a:active {
+      color: $black;
+      opacity: 0.3;
+    }
+
+    &--current a {
+      color: $menu-current;
+    }
+  }
+}
+
+.main-nav__list--hidden {
+  display: none;
 }

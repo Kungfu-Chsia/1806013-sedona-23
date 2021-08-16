@@ -1,0 +1,32 @@
+.modal-failure {
+  display: none;
+  position: fixed;
+  transform: translate(50%, -50%);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  background-color: $white;
+  top: 24%;
+  right: 50%;
+}
+
+.modal-failure__wrapper {
+  width: 320px;
+  text-align: center;
+}
+
+.modal-failure__title {
+  margin-top: 40px;
+}
+
+.modal-failure__text {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  width: 237px;
+  margin: 0 auto;
+  padding-bottom: 22px;
+}
+
+.modal-failure__button {
+  padding: 18px 64px 14px 63px;
+  margin-bottom: 35px;
+}

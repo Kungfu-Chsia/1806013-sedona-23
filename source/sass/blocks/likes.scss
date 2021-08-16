@@ -1,0 +1,21 @@
+.likes__button {
+  border: none;
+  background-color: $white;
+}
+
+.likes__counter {
+  position: relative;
+  margin-left: 14px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.likes__counter::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 23px;
+  height: 21px;
+  top: -6px;
+  background: url("../img/like-icon.svg");
+}

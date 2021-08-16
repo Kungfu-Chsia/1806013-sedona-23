@@ -1,0 +1,42 @@
+.personal {
+  border: none;
+}
+
+.personal__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal__title {
+  margin-bottom: 19px;
+}
+
+.personal__label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-right: 20px;
+  padding-top: 19px;
+  padding-bottom: 13px;
+}
+
+.personal__input {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: $extralight-grey;
+  border: none;
+  flex-grow: 2;
+  padding-top: 18px;
+  padding-left: 22px;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+
+  &:hover {
+    background-color: $disabled;
+  }
+
+  &:active {
+    background-color: $white;
+  }
+}

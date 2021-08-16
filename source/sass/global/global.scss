@@ -8,6 +8,20 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $black;
+  text-transform: uppercase;
+  min-height: 100%;
+  background: $white;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -37,28 +51,52 @@ a {
 }
 
 .button {
-  background-color: $colorblue;
-  color: $colorwhite;
+  background-color: $blue;
+  color: $white;
+  text-transform: uppercase;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-blue;
+  }
+
+  &:active {
+    background-color: $down-blue;
+    opacity: 0.3;
+  }
+
+  &[disabled] {
+    background-color: $disabled;
+  }
 }
 
 .hashtag {
   font-size: 21px;
   line-height: 26px;
-  color: $colorblack;
+  color: $black;
 }
 
-$colorwhite: #ffffff;
-$colorblack: #000000;
-$colorblue: #81b3d2;
-$colordesktopcontrols: #666666;
-$colormobilecontrols: #5c6870;
-$colorhovermobiles: #333333;
-$colorlightgrey: #eeeeee;
-$colordowngrey: #d5d5d5;
-$colorextralightgrey: #f2f2f2;
-$colorgrey: #e6e6e6;
-$colormediagrey: #eaeaea;
-$colorhoverblue: #669ec0;
-$colordownblue: #5496bd;
-$colordisabled: #e5e5e5;
-$colormenucurrent: #766357;
+.form-common-title {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.form-common-title::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  right: 100px;
+  width: 320px;
+  height: 1px;
+  background-color: $disabled;
+  transform: translateX(-50%);
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
