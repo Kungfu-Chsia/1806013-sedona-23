@@ -1,23 +1,8 @@
-.modal-failure {
-  display: none;
-  position: fixed;
-  transform: translate(50%, -50%);
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-  background-color: $white;
-  top: 24%;
-  right: 50%;
-}
-
-.modal-failure__wrapper {
-  width: 320px;
-  text-align: center;
-}
-
-.modal-failure__title {
+.modal__title-failure {
   margin-top: 40px;
 }
 
-.modal-failure__text {
+.modal__text-failure {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -26,7 +11,7 @@
   padding-bottom: 22px;
 }
 
-.modal-failure__button {
+.modal__button-failure {
   padding: 18px 64px 14px 63px;
   margin-bottom: 35px;
 }

@@ -7,6 +7,10 @@
   padding-top: 35px;
 }
 
+.impression__list {
+  @include list-style;
+}
+
 .impression__option {
   margin-bottom: 43px;
 }
@@ -21,24 +25,28 @@
   user-select: none;
 }
 
-.impression__input-radio + label::before {
-  content: '';
-  position: absolute;
-  left: -35px;
-  top: -12px;
-  width: 25px;
-  height: 25px;
-  border: 24px solid $extralight-grey;
-  border-radius: 50%;
+.impression__input-radio {
+  display: none;
 }
 
-.impression__input-radio:checked + label::after {
-  content: '';
-  position: absolute;
-  top: 3px;
-  left: -20px;
-  width: 18px;
-  height: 18px;
-  background-color: $hover-mobiles;
-  border-radius: 50%;
+.impression__input-radio + label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    margin-right: 26px;
+    border: 15px solid $extralight-grey;
+    border-radius: 50%;
+  }
+}
+
+.impression__input-radio:checked + label {
+  &::before {
+    background-color: $hover-mobiles;
+  }
 }

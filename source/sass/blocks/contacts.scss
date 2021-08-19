@@ -15,6 +15,7 @@
   font-weight: 400;
   text-align: start;
   padding-bottom: 8px;
+  position: relative;
 }
 
 .contacts__input {
@@ -35,20 +36,32 @@
     background-color: $disabled;
   }
 
-  &:active {
+  &:focus {
     background-color: $white;
   }
 }
-
-.contacts__input::after {
-  content: "";
-  display: block;
+/*
+.contacts__label--tel::after {
+  content: url("../img/phone.svg");
+  display: inline-block;
   width: 18px;
   height: 18px;
   margin: 20px;
+  position: absolute;
+}
+*/
+.contacts__block::after {
+  position: absolute;
+  background-color: $grey;
+  width: 58px;
+  height: 58px;
+  padding-top: 20px;
 }
 
-.contacts__input--tel::after {
-  background: url("../img/phone.svg") no-repeat right center;
-  position: absolute;
+.contacts__block--phone::after {
+  content: url("../img/phone.svg");
+}
+
+.contacts__block--email::after {
+  content: url("../img/mail.svg");
 }

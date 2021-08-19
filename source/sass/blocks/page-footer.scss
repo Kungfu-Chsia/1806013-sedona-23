@@ -17,6 +17,8 @@
 .page-footer__list {
   display: flex;
   justify-content: space-between;
+
+  @include list-style;
 }
 
 .page-footer__hashtag {
@@ -34,7 +36,7 @@
   justify-content: space-around;
 }
 
-.page-footer__link svg {
+.page-footer__copyright-link svg {
   fill: $black;
 
   &:hover {
@@ -45,4 +47,14 @@
     fill: $black;
     opacity: 0.3;
   }
+}
+
+.page-footer__link {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue;
+  margin-right: 6px;
 }

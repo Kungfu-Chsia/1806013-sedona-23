@@ -6,6 +6,8 @@
 .other-features__title {
   font-size: 18px;
   line-height: 26px;
+  margin: 0;
+  padding-top: 26px;
 }
 
 .other-features__text {
@@ -18,7 +20,7 @@
 .other-features__text/*:not(:last-child)*/::after {
   content: '';
   position: absolute;
-  top: 28px;
+  top: 60px;
   right: 100px;
   width: 280px;
   height: 1px;
@@ -33,3 +35,6 @@
   font-weight: 400;
 }
 
+.other-features__list {
+  @include list-style;
+}

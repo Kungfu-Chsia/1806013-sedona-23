@@ -6,6 +6,7 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+  text-align: start;
   font-weight: 700;
   color: $black;
   border: none;
@@ -18,7 +19,7 @@
     background-color: $disabled;
   }
 
-  &:active {
+  &:focus {
     background-color: $white;
   }
 }

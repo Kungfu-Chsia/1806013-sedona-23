@@ -2,6 +2,10 @@
   border: none;
 }
 
+.sights__list {
+  @include list-style;
+}
+
 .sights__title {
   padding-top: 14px;
   padding-bottom: 36px;
@@ -11,9 +15,41 @@
   font-size: 18px;
   line-height: 24px;
   text-transform: none;
+  padding-bottom: 54px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
 }
 
 .sights__option {
   text-align: start;
+  position: relative;
 }
 
+.sights__input-checkbox {
+  display: none;
+}
+
+.sights__input-checkbox + label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    margin-right: 26px;
+    border: 15px solid $extralight-grey;
+    border-radius: 1%;
+    background-repeat: no-repeat;
+  }
+}
+
+.sights__input-checkbox:checked + label {
+  &::before {
+    background-image: url(../img/tick.svg);
+  }
+}
