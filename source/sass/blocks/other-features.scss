@@ -1,0 +1,40 @@
+.other-features {
+  background-color: $lightgrey;
+  text-align: center;
+}
+
+.other-features__title {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  padding-top: 26px;
+}
+
+.other-features__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  position: relative;
+}
+
+.other-features__text/*:not(:last-child)*/::after {
+  content: '';
+  position: absolute;
+  top: 60px;
+  right: 100px;
+  width: 280px;
+  height: 1px;
+  background-color: $line-grey;
+  transform: translateX(-50%);
+}
+
+
+.other-features__number {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.other-features__list {
+  @include list-style;
+}

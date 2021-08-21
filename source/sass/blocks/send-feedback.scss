@@ -1,0 +1,19 @@
+@media (max-width: $mobile-width) {
+  .send-feedback__text {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .send-feedback__text {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+}
+
+.send-feedback__button {
+  padding: 19px 33px 14px 32px;
+  margin-bottom: 77px;
+  margin-top: 51px;
+}
