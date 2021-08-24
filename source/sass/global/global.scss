@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  min-width: 320px;
+  width: 320px;
   margin: 0 auto;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -20,6 +20,14 @@ body {
   text-transform: uppercase;
   min-height: 100%;
   background: $white;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+  }
 }
 
 img {
@@ -44,6 +52,17 @@ img {
   margin: 0;
   padding-left: 0;
   list-style: none;
+}
+
+.container-wrap {
+  padding: 0 20px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
 }
 
 a {
@@ -85,7 +104,7 @@ a {
 }
 
 .form-common-title::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 28px;
   right: 100px;
@@ -99,4 +118,3 @@ fieldset {
   margin: 0;
   padding: 0;
 }
-

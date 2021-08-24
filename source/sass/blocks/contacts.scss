@@ -23,7 +23,6 @@
   line-height: 26px;
   text-transform: none;
   font-weight: 700;
-  color: $black;
   border: none;
   background-color: $extralight-grey;
   margin-bottom: 14px;
@@ -31,6 +30,10 @@
   padding-left: 22px;
   padding-bottom: 14px;
   position: relative;
+
+  &::placeholder {
+    color: $black;
+  }
 
   &:hover {
     background-color: $disabled;
@@ -40,16 +43,7 @@
     background-color: $white;
   }
 }
-/*
-.contacts__label--tel::after {
-  content: url("../img/phone.svg");
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin: 20px;
-  position: absolute;
-}
-*/
+
 .contacts__block::after {
   position: absolute;
   background-color: $grey;

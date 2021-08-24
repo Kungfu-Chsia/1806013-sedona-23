@@ -1,7 +1,15 @@
 .welcome-foto {
-  height: 333px;
+  height: 389px;
   background-color: $down-blue;
-  background-image: url("../img/intro-triangle.svg"), url("../img/text-index.svg"), url("../img/back-s.jpg");
-  background-position: center bottom, center 52px, center -38px;
+  background-image: url("../img/intro-triangle.svg"),
+    url("../img/text-index.svg"), url("../img/back-s.jpg");
+  background-position: center bottom, center 90px, center bottom;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    height: 518px;
+    background-image: url("../img/intro-triangle-l.svg"),
+      url("../img/text-index-l.svg"), url("../img/back-l.jpg");
+    background-position: center bottom, center 77px, center bottom;
+  }
 }

@@ -8,12 +8,15 @@
   text-transform: none;
   text-align: start;
   font-weight: 700;
-  color: $black;
   border: none;
   background-color: $extralight-grey;
   padding: 13px 23px 29px 21px;
   height: 160px;
   width: 100%;
+
+  &::placeholder {
+    color: $black;
+  }
 
   &:hover {
     background-color: $disabled;

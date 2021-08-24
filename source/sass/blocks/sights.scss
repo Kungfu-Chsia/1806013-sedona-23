@@ -37,19 +37,21 @@
   cursor: pointer;
 
   &::before {
-    content: '';
+    content: "";
     flex-shrink: 0;
     width: 46px;
     height: 46px;
     margin-right: 26px;
-    border: 15px solid $extralight-grey;
     border-radius: 1%;
     background-repeat: no-repeat;
+    background-color: $extralight-grey;
   }
 }
 
 .sights__input-checkbox:checked + label {
   &::before {
     background-image: url(../img/tick.svg);
+    background-size: 23px 17px;
+    background-position: center;
   }
 }

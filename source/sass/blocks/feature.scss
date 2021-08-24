@@ -2,20 +2,55 @@
   background-color: $blue;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .feature__wrapper {
-  width: 320px;
-  margin: 0 auto;
+  padding: 40px 13px 30px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: url("../img/white-triangle-s.svg");
+    top: -20px;
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 32px 44px;
+
+    &--last {
+      order: 2;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--last {
+      padding: 51px 78px 53px;
+    }
+  }
 }
 
 .feature__title {
+  margin-bottom: 15px;
   font-size: 18px;
   line-height: 26px;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
 }
 
 .feature__number {
+  display: block;
+  margin-bottom: 15px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -29,7 +64,22 @@
   color: $white;
 }
 
+.feature__img-wrapper {
+  line-height: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-shrink: 0;
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-shrink: 0;
+    width: 800px;
+  }
+}
+
 .feature__img-wrapper img {
-  width: 520px;
+  width: auto;
   height: 260px;
 }
