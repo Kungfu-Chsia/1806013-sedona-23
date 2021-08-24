@@ -50,7 +50,7 @@
 
 .sights__input-checkbox:checked + label {
   &::before {
-    background-image: url(../img/tick.svg);
+    background-image: url("../img/tick.svg");
     background-size: 23px 17px;
     background-position: center;
   }
