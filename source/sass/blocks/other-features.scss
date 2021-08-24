@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.other-features__wrapper {
+  padding: 0 31px;
+}
+
 .other-features__title {
   font-size: 18px;
   line-height: 26px;
@@ -28,6 +32,10 @@
     &--line {
       max-width: 147px;
     }
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -38,17 +46,6 @@
     }
   }
 }
-
-// .other-features__text/*:not(:last-child)*/::after {
-//   content: '';
-//   position: absolute;
-//   top: 60px;
-//   right: 100px;
-//   width: 280px;
-//   height: 1px;
-//   background-color: $line-grey;
-//   transform: translateX(-50%);
-// }
 
 .other-features__number {
   display: block;

@@ -12,11 +12,11 @@
   padding: 40px 13px 30px;
   position: relative;
 
-  &::before {
+  &--triangle::before {
     position: absolute;
     content: url("../img/white-triangle-s.svg");
     top: -20px;
-    left: 0;
+    transform: translateX(-50%);
   }
 
   @media (min-width: $tablet-width) {
@@ -24,6 +24,10 @@
 
     &--last {
       order: 2;
+    }
+
+    &--triangle::before {
+      display: none;
     }
   }
 

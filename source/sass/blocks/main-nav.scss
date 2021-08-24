@@ -20,6 +20,10 @@
 
 .main-nav__wrapper {
   min-height: 56px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 0;
+  }
 }
 
 .main-nav__logo {
@@ -77,13 +81,13 @@
 }
 
 .main-nav__button {
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2),
-    0 -1px 0 rgba(1, 1, 1, 0.2) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset,
+    0 -1px 0 rgba(1, 1, 1, 0.2);
 
   &:last-child {
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2),
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset,
       0 -9px 4px -6px rgba(0, 0, 0, 0.2) inset,
-      0 -1px 0 rgba(1, 1, 1, 0.2) inset;
+      0 -1px 0 rgba(1, 1, 1, 0.2);
   }
 }
 
@@ -93,6 +97,7 @@
     position: static;
     padding-left: 34px;
     padding-right: 11px;
+    display: flex;
   }
 
   .main-nav__item {
@@ -127,6 +132,10 @@
 
     & a:active {
       opacity: 0.3;
+    }
+
+    &:last-child {
+      box-shadow: none;
     }
   }
 }
@@ -192,5 +201,9 @@
   &:active::before,
   &:active::after {
     background-color: fade($white, 30%);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
