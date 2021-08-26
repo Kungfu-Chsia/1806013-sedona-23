@@ -80,7 +80,7 @@
   }
 }
 
-.main-nav__button {
+.main-nav__item--button {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset,
     0 -1px 0 rgba(1, 1, 1, 0.2);
 
@@ -122,7 +122,7 @@
     }
   }
 
-  .main-nav__button {
+  .main-nav__item--button {
     background-color: $white;
     box-shadow: none;
 
