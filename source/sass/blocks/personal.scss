@@ -1,14 +1,31 @@
 .personal {
-  border: none;
+  order: -1;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+  }
 }
 
 .personal__wrapper {
   display: flex;
   justify-content: space-between;
+
+  input &:nth-last-child {
+    margin-bottom: 25px;
+  }
+}
+
+.personal input:last-child {
+  margin-bottom: 25px;
 }
 
 .personal__title {
   margin-bottom: 19px;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 58px;
+  }
 }
 
 .personal__label {
@@ -18,6 +35,10 @@
   margin-right: 20px;
   padding-top: 19px;
   padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 58px;
+  }
 }
 
 .personal__input {
@@ -31,6 +52,7 @@
   padding-left: 22px;
   padding-bottom: 14px;
   margin-bottom: 20px;
+  min-width: 0;
 
   &::placeholder {
     color: $black;

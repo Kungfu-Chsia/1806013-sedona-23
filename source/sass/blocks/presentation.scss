@@ -4,6 +4,11 @@
   text-align: center;
   margin-bottom: 28px;
   padding-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-top: 59px;
+  }
 }
 
 .presentation__text {
@@ -13,6 +18,13 @@
   text-align: center;
   margin-left: 28px;
   margin-right: 26px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 445px;
+    margin: 0 auto;
+    margin-bottom: 68px;
+  }
 }
 
 .presentation__video {
@@ -21,6 +33,17 @@
   background-repeat: no-repeat;
   height: 201px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/video-m.jpg");
+    height: 500px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/video-l.jpg");
+    margin-bottom: 121px;
+  }
 }
 
 .presentation__bar {
@@ -28,6 +51,10 @@
   background-position: center top;
   background-repeat: no-repeat;
   height: 66px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .presentation__scale {
@@ -40,21 +67,47 @@
   background-color: $black;
   opacity: 0.6;
   padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    height: 93px;
+    top: 91%;
+    width: 648px;
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
 
 .presentation__video-bar {
   height: 3px;
   background: $white;
   opacity: 0.2;
+  width: 235px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 389px;
+    margin-left: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
+  }
 }
 
 .presentation__toggle {
   position: absolute;
-  top: 175px;
+  top: 87%;
   left: 118px;
   border: 6px solid $white;
   border-radius: 50%;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 90%;
+  }
 }
 
 .presentation__wrapper {
@@ -84,6 +137,11 @@
 
 .presentation__subtitles {
   padding-left: 93px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: block;
+  }
 }
 
 .presentation__replay {

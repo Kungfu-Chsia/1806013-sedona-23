@@ -1,11 +1,24 @@
 .likes__button {
   border: none;
-  background-color: $white;
   cursor: pointer;
+  background: none;
 }
 
 .likes__counter {
   margin-left: 14px;
   font-size: 14px;
   line-height: 24px;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+}
+
+.likes__img {
+  fill: $black;
+
+  @media (min-width: $desktop-width) {
+    fill: $white;
+  }
 }

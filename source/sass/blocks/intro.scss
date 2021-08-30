@@ -19,6 +19,15 @@
   @media (min-width: $tablet-width) {
     max-width: 520px;
     font-size: 21px;
+
+    &--foto {
+      font-size: 30px;
+      margin-top: 60px;
+
+      @media (min-width: $desktop-width) {
+        margin-top: 102px;
+      }
+    }
   }
 }
 
@@ -28,4 +37,17 @@
   line-height: 26px;
   text-align: center;
   font-weight: 400;
+
+  &--foto {
+    @media (min-width: $tablet-width) {
+      max-width: 458px;
+      margin: 0 auto;
+      margin-bottom: 65px;
+      padding: 0 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 67px;
+    }
+  }
 }

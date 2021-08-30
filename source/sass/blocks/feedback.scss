@@ -1,3 +1,7 @@
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+}
 
 .feedback__wrapper {
   display: flex;
@@ -15,5 +19,18 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  margin-bottom: 37px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 443px;
+    margin: 0 auto;
+  }
+}
+
+.feedback__personal-impression {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
 }

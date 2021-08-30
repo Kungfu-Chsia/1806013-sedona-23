@@ -22,11 +22,11 @@ body {
   background: $white;
 
   @media (min-width: $tablet-width) {
-    min-width: 768px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -55,7 +55,15 @@ img {
 }
 
 .container {
-  padding: 0 20px;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 120px;
+  }
 }
 
 p,
@@ -90,6 +98,12 @@ a {
   }
 }
 
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
 .hashtag {
   font-size: 21px;
   line-height: 26px;
@@ -103,18 +117,12 @@ a {
   position: relative;
 }
 
-.form-common-title::before {
-  content: "";
-  position: absolute;
-  top: 28px;
-  right: 100px;
-  width: 320px;
-  height: 1px;
-  background-color: $disabled;
-  transform: translateX(-50%);
+.underline {
+  border: none;
+  border-top: 1px solid $line-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
-fieldset {
-  margin: 0;
-  padding: 0;
-}

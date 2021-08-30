@@ -1,10 +1,17 @@
-.impression__form {
-  border: none;
+.impression {
+  @media (min-width: $tablet-width) {
+    border-right: 1px solid $line-grey;
+  }
 }
 
 .impression__title {
   margin-bottom: 37px;
-  padding-top: 35px;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 303px;
+    padding-top: 0;
+  }
 }
 
 .impression__list {
@@ -13,6 +20,10 @@
 
 .impression__option {
   margin-bottom: 43px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 288px;
+  }
 }
 
 .impression__option label {

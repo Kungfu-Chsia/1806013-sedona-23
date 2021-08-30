@@ -1,14 +1,25 @@
-.sights {
-  border: none;
-}
-
 .sights__list {
   @include list-style;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 75px 0 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto auto auto auto;
+    margin: 0;
+  }
 }
 
 .sights__title {
-  padding-top: 14px;
+  padding-top: 15px;
   padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .sights__label {
