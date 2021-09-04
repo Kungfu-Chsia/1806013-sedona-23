@@ -1,3 +1,9 @@
+.sights {
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
+}
+
 .sights__list {
   @include list-style;
 
@@ -8,8 +14,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: auto auto auto auto;
+    display: flex;
+    justify-content: space-between;
     margin: 0;
+    flex-wrap: wrap;
   }
 }
 
@@ -19,6 +27,9 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
+    width: 356px;
+    text-align: center;
+    padding-top: 38px;
   }
 }
 
@@ -31,6 +42,11 @@
   display: block;
   cursor: pointer;
   user-select: none;
+  padding-right: 44px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .sights__option {

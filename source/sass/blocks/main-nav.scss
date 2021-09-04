@@ -16,6 +16,18 @@
       display: none;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    & .container {
+      padding: 0 34px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    & .container {
+      padding: 0 55px 0 75px;
+    }
+  }
 }
 
 .main-nav__wrapper {
@@ -95,13 +107,32 @@
   .main-nav__list {
     flex-direction: row;
     position: static;
-    padding-left: 34px;
-    padding-right: 11px;
     display: flex;
   }
 
   .main-nav__item {
-    width: 100%;
+    text-align: left;
+    width: 153px;
+
+    @media (min-width: $desktop-width) {
+      width: 239px;
+    }
+
+    &:nth-child(4n+2) {
+      margin-right: auto;
+    }
+
+    &:nth-child(3) {
+      padding-right: 6px;
+    }
+
+    &:nth-child(4n+3) {
+      text-align: right;
+    }
+
+    &:nth-child(4n+4) {
+      text-align: right;
+    }
 
     a {
       color: $black;

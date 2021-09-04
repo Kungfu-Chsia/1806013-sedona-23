@@ -1,3 +1,13 @@
+.emotion {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
+}
+
 .emotion__textarea {
   font-size: 18px;
   line-height: 26px;
@@ -26,4 +36,15 @@
 .emotion__title {
   padding-top: 20px;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 59px;
+    padding-right: 61px;
+  }
 }

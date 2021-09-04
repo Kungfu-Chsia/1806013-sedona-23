@@ -51,6 +51,7 @@
   background-position: center top;
   background-repeat: no-repeat;
   height: 66px;
+  margin-bottom: 78px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -118,8 +119,29 @@
   padding-top: 23px;
 }
 
+.presentation__wrapper-buttons {
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 648px;
+    margin-left: 60px;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 6%;
+    left: 0;
+    align-items: center;
+  }
+}
+
 .presentation__button {
   border: none;
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(183px);
+  }
 
   svg {
     fill: $mobile-controls;
@@ -132,6 +154,18 @@
       fill: $hover-mobiles;
       opacity: 0.3;
     }
+
+    @media (min-width: $tablet-width) {
+      fill: $white;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
   }
 }
 
@@ -141,9 +175,24 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     display: block;
+    padding-left: 0;
+    background: none;
   }
 }
 
 .presentation__replay {
   padding-left: 11px;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    left: 0;
+    display: block;
+    transform: translateX(-165px);
+  }
+}
+
+.presentation__fulscreen {
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
 }

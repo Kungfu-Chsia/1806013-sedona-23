@@ -60,137 +60,139 @@
             посещенных вами достопримечательностях
           </p>
         </div>
-        <div class="container">
+      </section>
+
+      <section class="feedback-plan">
+        <h2 class="visually-hidden">Форма отзыва</h2>
           <form class="feedback__form" action="https://echo.htmlacademy.ru/courses" method="post">
-
-              <div class="feedback__personal-impression">
-                <fieldset class="impression underline">
-
-                    <legend class="impression__title form-common-title">
-                      ваше общее впечатление:
-                    </legend>
-                    <ul class="impression__list">
-                      <li class="impression__option">
-                        <input
-                          hidden
-                          class="impression__input-radio"
-                          type="radio"
-                          name="impression"
-                          value="positive"
-                          id="impression-positive"
-                          checked
-                        />
-                        <label for="impression-positive">Скорее положительное</label>
-                      </li>
-                      <li class="impression__option">
-                        <input
-                          hidden
-                          class="impression__input-radio"
-                          type="radio"
-                          name="impression"
-                          value="negative"
-                          id="impression-negative"
-                        />
-                        <label for="impression-negative">Скорее отрицательное</label>
-                      </li>
-                      <li class="impression__option">
-                        <input
-                          hidden
-                          class="impression__input-radio"
-                          type="radio"
-                          name="impression"
-                          value="cant-answer"
-                          id="impression-cant-answer"
-                        />
-                        <label for="impression-cant-answer"
-                          >Затрудняюсь ответить</label
-                        >
-                      </li>
-                    </ul>
-
-                </fieldset>
-
-                <fieldset class="personal underline">
-
-                  <legend class="personal__title form-common-title">
-                      Представьтесь:
-                    </legend>
-                    <div class="personal__wrapper">
-                      <label class="personal__label" for="name">Имя*:</label>
+            <div class="feedback__feedback-wrapper">
+              <fieldset class="feedback__fieldset impression">
+                <legend class="impression__title form-common-title">
+                  ваше общее впечатление:
+                </legend>
+                <div class="container">
+                  <ul class="impression__list">
+                    <li class="impression__option">
                       <input
-                        class="personal__input"
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Петр"
-                        required
+                        hidden
+                        class="impression__input-radio"
+                        type="radio"
+                        name="impression"
+                        value="positive"
+                        id="impression-positive"
+                        checked
                       />
-                    </div>
-                    <div class="personal__wrapper">
-                      <label class="personal__label" for="surname">Фамилия*:</label>
+                      <label for="impression-positive">Скорее положительное</label>
+                    </li>
+                    <li class="impression__option">
                       <input
-                        class="personal__input"
-                        type="text"
-                        id="surname"
-                        name="surname"
-                        placeholder="Иванов"
-                        required
+                        hidden
+                        class="impression__input-radio"
+                        type="radio"
+                        name="impression"
+                        value="negative"
+                        id="impression-negative"
                       />
-                    </div>
-                    <div class="personal__wrapper">
-                      <label class="personal__label" for="middlename"
-                        >Отчество:</label
+                      <label for="impression-negative">Скорее отрицательное</label>
+                    </li>
+                    <li class="impression__option">
+                      <input
+                        hidden
+                        class="impression__input-radio"
+                        type="radio"
+                        name="impression"
+                        value="cant-answer"
+                        id="impression-cant-answer"
+                      />
+                      <label for="impression-cant-answer"
+                        >Затрудняюсь ответить</label
                       >
-                      <input
-                        class="personal__input"
-                        type="text"
-                        id="middlename"
-                        name="middlename"
-                        placeholder="Александрович"
-                      />
-                    </div>
+                    </li>
+                  </ul>
+                </div>
+              </fieldset>
 
+              <fieldset class="feedback__fieldset personal">
+                <legend class="personal__title form-common-title">
+                    Представьтесь:
+                </legend>
+                <div class="container">
+                  <div class="personal__wrapper">
+                    <label class="personal__label" for="name">Имя*:</label>
+                    <input
+                      class="personal__input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Петр"
+                      required
+                    />
+                  </div>
+                  <div class="personal__wrapper">
+                    <label class="personal__label" for="surname">Фамилия*:</label>
+                    <input
+                      class="personal__input"
+                      type="text"
+                      id="surname"
+                      name="surname"
+                      placeholder="Иванов"
+                      required
+                    />
+                  </div>
+                  <div class="personal__wrapper">
+                    <label class="personal__label" for="middlename"
+                      >Отчество:</label
+                    >
+                    <input
+                      class="personal__input"
+                      type="text"
+                      id="middlename"
+                      name="middlename"
+                      placeholder="Александрович"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+              <div class="container">
+                <fieldset class="feedback__fieldset contacts">
+                  <legend class="contacts__title form-common-title feedback__title--line">
+                      контактная информация:
+                  </legend>
+                    <div class="contacts__wrapper">
+                      <div class="contacts__block contacts__block--phone">
+                        <label class="contacts__label contacts__label--tel" for="tel"
+                          ><span class="contacts__label-hidden">Контактный</span> телефон*:</label
+                        >
+                        <input
+                          class="contacts__input"
+                          type="tel"
+                          id="tel"
+                          name="tel"
+                          placeholder="Введите телефон"
+                          required
+                        />
+                      </div>
+                      <div class="contacts__block contacts__block--email">
+                        <label class="contacts__label" for="email"
+                          >Электронная почта*:</label
+                        >
+                        <input
+                          class="contacts__input"
+                          type="email"
+                          id="email"
+                          name="email"
+                          placeholder="Введите e-mail"
+                          required
+                        />
+                      </div>
+                    </div>
                 </fieldset>
               </div>
-                <fieldset class="contacts underline">
-
-                    <legend class="contacts__title form-common-title">
-                      контактная информация:
-                    </legend>
-                    <div class="contacts__block contacts__block--phone">
-                      <label class="contacts__label contacts__label--tel" for="tel"
-                        >Контактный телефон*:</label
-                      >
-                      <input
-                        class="contacts__input"
-                        type="tel"
-                        id="tel"
-                        name="tel"
-                        placeholder="Введите телефон"
-                        required
-                      />
-                    </div>
-                    <div class="contacts__block contacts__block--email">
-                      <label class="contacts__label" for="email"
-                        >Электронная почта*:</label
-                      >
-                      <input
-                        class="contacts__input"
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Введите e-mail"
-                        required
-                      />
-                    </div>
-
-                </fieldset>
-
-                <fieldset class="sights underline">
-
-                    <legend class="sights__title form-common-title">
+              <div class="container">
+                <fieldset class="feedback__fieldset sights">
+                  <legend class="sights__title form-common-title feedback__title--line">
                       посещённые достопримечательности:
-                    </legend>
+                  </legend>
                     <ul class="sights__list">
                       <li class="sights__option">
                         <input
@@ -244,35 +246,37 @@
                         >
                       </li>
                     </ul>
-
                 </fieldset>
-
-                <fieldset class="emotion underline">
-
-                    <legend class="emotion__title form-common-title">
+              </div>
+              <div class="container">
+                <fieldset class="feedback__fieldset emotion">
+                  <legend class="emotion__title form-common-title feedback__title--line">
                       Опишите свои эмоции:
-                    </legend>
-                    <textarea
-                      class="emotion__textarea"
-                      id="letter"
-                      name="letter"
-                      placeholder="Опишите подробно все свои восторги "
-                    ></textarea>
+                  </legend>
+
+                      <textarea
+                        class="emotion__textarea"
+                        id="letter"
+                        name="letter"
+                        placeholder="Опишите подробно все свои восторги "
+                      ></textarea>
 
                 </fieldset>
-                <div class="send-feedback">
-                  <button
-                    class="send-feedback__button button"
-                    type="submit"
-                    aria-label="отправить отзыв"
-                  >
-                    отправить отзыв
-                  </button>
-                  <span class="send-feedback__text">* — обязательные поля</span>
-                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="send-feedback">
+                <button
+                  class="send-feedback__button button"
+                  type="submit"
+                  aria-label="отправить отзыв"
+                >
+                  отправить отзыв
+                </button>
+                <span class="send-feedback__text">* — обязательные поля</span>
+              </div>
             </div>
           </form>
-        </div>
       </section>
     </main>
 

@@ -55,14 +55,14 @@ img {
 }
 
 .container {
-  margin: 0 20px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 60px;
+    padding: 0 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 120px;
+    padding: 0 120px;
   }
 }
 
@@ -115,14 +115,9 @@ fieldset {
   line-height: 26px;
   text-transform: uppercase;
   position: relative;
-}
-
-.underline {
-  border: none;
-  border-top: 1px solid $line-grey;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
-    border: none;
+    margin-left: 0;
   }
 }
-

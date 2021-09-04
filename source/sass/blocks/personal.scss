@@ -3,6 +3,8 @@
 
   @media (min-width: $tablet-width) {
     order: 0;
+    width: 50%;
+    border: none;
   }
 }
 
@@ -10,13 +12,13 @@
   display: flex;
   justify-content: space-between;
 
-  input &:nth-last-child {
+  &:last-child {
     margin-bottom: 25px;
   }
-}
 
-.personal input:last-child {
-  margin-bottom: 25px;
+  @media (min-width: $tablet-width) {
+    margin-left: -60px;
+  }
 }
 
 .personal__title {
@@ -24,7 +26,11 @@
   margin-top: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 58px;
+    margin-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 120px;
   }
 }
 
@@ -37,7 +43,7 @@
   padding-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 58px;
+    padding-left: 58px;
   }
 }
 

@@ -1,8 +1,12 @@
-.map__interactive {
-  width: 100%;
+.map {
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 36px;
   }
 }
+
+.map__interactive {
+  width: 100%;
+}
+
