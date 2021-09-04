@@ -1,10 +1,25 @@
-.impression__form {
-  border: none;
+.impression {
+  @media (min-width: $tablet-width) {
+    border: none;
+    border-right: 1px solid $line-grey;
+    width: 50%;
+  }
 }
 
 .impression__title {
   margin-bottom: 37px;
-  padding-top: 35px;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 303px;
+    padding-top: 0;
+    margin-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 303px;
+    margin-left: 120px;
+  }
 }
 
 .impression__list {
@@ -35,13 +50,14 @@
   cursor: pointer;
 
   &::before {
-    content: '';
+    content: "";
     flex-shrink: 0;
     width: 48px;
     height: 48px;
     margin-right: 26px;
     border: 15px solid $extralight-grey;
     border-radius: 50%;
+    background-color: $extralight-grey;
   }
 }
 

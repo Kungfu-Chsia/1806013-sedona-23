@@ -1,5 +1,11 @@
 .emotion {
-  border: none;
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
 }
 
 .emotion__textarea {
@@ -8,12 +14,15 @@
   text-transform: none;
   text-align: start;
   font-weight: 700;
-  color: $black;
   border: none;
   background-color: $extralight-grey;
   padding: 13px 23px 29px 21px;
   height: 160px;
   width: 100%;
+
+  &::placeholder {
+    color: $black;
+  }
 
   &:hover {
     background-color: $disabled;
@@ -25,6 +34,17 @@
 }
 
 .emotion__title {
-  padding-top: 60px;
+  padding-top: 20px;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 59px;
+    padding-right: 61px;
+  }
 }

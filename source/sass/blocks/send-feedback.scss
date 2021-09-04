@@ -1,11 +1,17 @@
-@media (max-width: $mobile-width) {
-  .send-feedback__text {
-    display: none;
+.send-feedback {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .send-feedback__text {
+.send-feedback__text {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
@@ -16,4 +22,17 @@
   padding: 19px 33px 14px 32px;
   margin-bottom: 77px;
   margin-top: 51px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 102px;
+    padding: 19px 132px 14px 133px;
+  }
 }

@@ -1,12 +1,41 @@
 .contacts {
-  border: none;
   flex-direction: column;
   display: flex;
+  order: -1;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
+}
+
+.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 
 .contacts__title {
-  padding-top: 26px;
+  padding-top: 20px;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding-left: 46px;
+    padding-right: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+    padding-right: 62px;
+  }
 }
 
 .contacts__label {
@@ -23,7 +52,6 @@
   line-height: 26px;
   text-transform: none;
   font-weight: 700;
-  color: $black;
   border: none;
   background-color: $extralight-grey;
   margin-bottom: 14px;
@@ -32,6 +60,10 @@
   padding-bottom: 14px;
   position: relative;
 
+  &::placeholder {
+    color: $black;
+  }
+
   &:hover {
     background-color: $disabled;
   }
@@ -39,23 +71,36 @@
   &:focus {
     background-color: $white;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 590px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 257px;
+  }
 }
-/*
-.contacts__label--tel::after {
-  content: url("../img/phone.svg");
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  margin: 20px;
-  position: absolute;
+
+
+.contacts__block {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 56px;
+  }
 }
-*/
+
 .contacts__block::after {
   position: absolute;
   background-color: $grey;
   width: 58px;
   height: 58px;
-  padding-top: 20px;
+  padding: 21px;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    right: unset;
+  }
 }
 
 .contacts__block--phone::after {
@@ -64,4 +109,10 @@
 
 .contacts__block--email::after {
   content: url("../img/mail.svg");
+}
+
+.contacts__label-hidden {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

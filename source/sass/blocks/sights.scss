@@ -1,14 +1,36 @@
 .sights {
-  border: none;
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
 }
 
 .sights__list {
   @include list-style;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 75px 0 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    flex-wrap: wrap;
+  }
 }
 
 .sights__title {
-  padding-top: 14px;
+  padding-top: 15px;
   padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 356px;
+    text-align: center;
+    padding-top: 38px;
+  }
 }
 
 .sights__label {
@@ -20,6 +42,11 @@
   display: block;
   cursor: pointer;
   user-select: none;
+  padding-right: 44px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .sights__option {
@@ -37,19 +64,21 @@
   cursor: pointer;
 
   &::before {
-    content: '';
+    content: "";
     flex-shrink: 0;
     width: 46px;
     height: 46px;
     margin-right: 26px;
-    border: 15px solid $extralight-grey;
     border-radius: 1%;
     background-repeat: no-repeat;
+    background-color: $extralight-grey;
   }
 }
 
 .sights__input-checkbox:checked + label {
   &::before {
-    background-image: url(../img/tick.svg);
+    background-image: url("../img/tick.svg");
+    background-size: 23px 17px;
+    background-position: center;
   }
 }
