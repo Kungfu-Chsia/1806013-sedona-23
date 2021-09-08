@@ -7,11 +7,25 @@
   background-position: center bottom, center 90px, center bottom;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-triangle.svg"),
+      url("../img/text-index.svg"),
+      url("../img/back-s@2x.jpg");
+    background-size: auto 57px, auto 214px, 320px auto;
+  }
+
   @media (min-width: $tablet-width) {
     height: 518px;
     background-image: url("../img/intro-triangle-l.svg"),
       url("../img/text-index-l.svg"),
       url("../img/back-l.jpg");
     background-position: center bottom, center 77px, center bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-triangle-l.svg"),
+        url("../img/text-index-l.svg"),
+        url("../img/back-l@2x.jpg");
+      background-size: auto 57px, auto 350px, 1200px auto;
+    }
   }
 }

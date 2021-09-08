@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
 
@@ -81,15 +82,16 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/photo-city-l.jpg"
+                  srcset="img/photo-city-l.jpg, img/photo-city-l@2x.jpg 2x"
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/photo-city-1x1-t.jpg"
+                  srcset="img/photo-city-1x1-t.jpg 1x, img/photo-city-m@2x.jpg 2x"
                 />
                 <img
                   class="feature__img"
                   src="img/photo-city-1x1.jpg"
+                  srcset="img/photo-city@2x.jpg 2x"
                   width="320"
                   height="260"
                   alt="Old house of Sedona with flags"
@@ -169,15 +171,16 @@
             <picture>
               <source
               media="(min-width: 1200px)"
-              srcset="img/photo-bridge-l.jpg"
+              srcset="img/photo-bridge-l.jpg 1x, img/photo-bridge-l@2x.jpg 2x"
             />
               <source
                 media="(min-width: 768px)"
-                srcset="img/photo-bridge-1x1-m.jpg"
+                srcset="img/photo-bridge-1x1-m.jpg 1x, img/photo-bridge-m@2x.jpg 2x"
               />
               <img
                 class="feature__img"
                 src="img/photo-bridge-1x1.jpg"
+                srcset="img/photo-bridge@2x.jpg 2x"
                 width="320"
                 height="260"
                 alt="Rocky"
@@ -201,7 +204,7 @@
                 <li class="other-features__item">
                   <h3 class="other-features__title">Красивая дорога</h3>
                   <span class="other-features__number">&mdash;№4&mdash;</span>
-                  <p class="other-features__text">
+                  <p class="other-features__text other-features__text--line">
                     Ехать в Седону из Лас-Вегаса <br> совсем не скучно
                   </p>
                 </li>

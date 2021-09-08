@@ -25,14 +25,14 @@
 }
 
 .feature__text-part {
-  padding: 40px 13px 30px;
+  padding: 49px 17px 36px;
 
   @media (min-width: $tablet-width) {
     padding: 40px 32px 44px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 51px 68px 53px;
+    padding: 50px 68px 53px;
   }
 }
 
@@ -46,17 +46,25 @@
     font-size: 21px;
     width: 150px;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 14px;
   }
 }
 
 .feature__number {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .feature__text {

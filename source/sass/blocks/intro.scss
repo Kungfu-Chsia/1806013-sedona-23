@@ -1,10 +1,15 @@
 .intro {
   padding-top: 32px;
-  padding-bottom: 20px;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
     padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 43px;
   }
 }
 

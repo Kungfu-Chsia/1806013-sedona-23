@@ -34,15 +34,35 @@
   height: 201px;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-s@2x.jpg");
+    background-size: cover;
+    margin: 0 20px;
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/video-m.jpg");
     height: 500px;
     margin-bottom: 76px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-m@2x.jpg");
+      background-size: cover;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/video-l.jpg");
     margin-bottom: 121px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-l@2x.jpg");
+      background-size: cover;
+      margin-left: 200px;
+      margin-right: 200px;
+    }
   }
 }
 
