@@ -7,7 +7,13 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    padding-top: 59px;
+    padding-top: 56px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 54px;
+    margin-bottom: 32px;
   }
 }
 
@@ -23,7 +29,7 @@
   @media (min-width: $tablet-width) {
     max-width: 445px;
     margin: 0 auto;
-    margin-bottom: 68px;
+    margin-bottom: 79px;
   }
 }
 
@@ -37,7 +43,6 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/video-s@2x.jpg");
     background-size: cover;
-    margin: 0 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -121,13 +126,23 @@
 .presentation__toggle {
   position: absolute;
   top: 87%;
-  left: 118px;
-  border: 6px solid $white;
+  left: 77px;
+  border: 5px solid $white;
   border-radius: 50%;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     top: 90%;
+    left: 35%;
+    border: 4px solid $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 34%;
+
+    @media (min-resolution: 2dppx) {
+      left: 26%;
+    }
   }
 }
 
@@ -153,6 +168,18 @@
     bottom: 6%;
     left: 0;
     align-items: center;
+
+    @media (min-resolution: 2dppx) {
+      margin-left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 349px;
+
+      @media (min-resolution: 2dppx) {
+        margin-left: 147px;
+      }
+    }
   }
 }
 
@@ -190,13 +217,17 @@
 }
 
 .presentation__subtitles {
-  padding-left: 93px;
+  padding-left: 106px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     display: block;
-    padding-left: 0;
+    padding-left: 71px;
     background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 71px;
   }
 }
 
@@ -207,12 +238,19 @@
     background: none;
     left: 0;
     display: block;
-    transform: translateX(-165px);
+    transform: translateX(-159px);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(-309px);
   }
 }
 
 .presentation__fulscreen {
+  padding-right: 10px;
+
   @media (min-width: $tablet-width) {
     background: none;
+    padding-right: 39px;
   }
 }

@@ -7,25 +7,64 @@
   background-position: center bottom, center 90px, center bottom;
   background-repeat: no-repeat;
 
+  &--mini {
+    height: 158px;
+    background-color: $down-blue;
+    background-image: url("../img/intro-triangle.svg"),
+      url("../img/sedona-s.svg"),
+      url("../img/back-s.jpg");
+    background-position: center bottom, center 52px, center bottom;
+    background-repeat: no-repeat;
+  }
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/intro-triangle.svg"),
-      url("../img/text-index.svg"),
+      url("../img/sedona-m.svg"),
       url("../img/back-s@2x.jpg");
     background-size: auto 57px, auto 214px, 320px auto;
   }
 
   @media (min-width: $tablet-width) {
-    height: 518px;
-    background-image: url("../img/intro-triangle-l.svg"),
-      url("../img/text-index-l.svg"),
-      url("../img/back-l.jpg");
-    background-position: center bottom, center 77px, center bottom;
+    &--mini {
+      height: 290px;
+      background-image: url("../img/intro-triangle-l.svg"),
+        url("../img/sedona-m.svg"),
+        url("../img/back-l.jpg");
+      background-position: center bottom, center 77px, center bottom;
+    }
+
+    @media (min-width: $tablet-width) {
+      height: 290px;
+      background-color: $down-blue;
+      background-image: url("../img/intro-triangle-l.svg"),
+        url("../img/sedona-m.svg"),
+        url("../img/back-l.jpg");
+      background-position: center bottom, center 95px, center bottom;
+      background-repeat: no-repeat;
+    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro-triangle-l.svg"),
-        url("../img/text-index-l.svg"),
+        url("../img/sedona-m.svg"),
         url("../img/back-l@2x.jpg");
-      background-size: auto 57px, auto 350px, 1200px auto;
+      background-size: auto 57px, auto 78px, 1200px auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 300px;
+      background-color: $down-blue;
+      background-image: url("../img/intro-triangle-l.svg"),
+        url("../img/sedona-m.svg"),
+        url("../img/back-l.jpg");
+      background-position: center bottom, center 102px, center bottom;
+      background-repeat: no-repeat;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-triangle-l.svg"),
+        url("../img/sedona-m.svg"),
+        url("../img/back-l@2x.jpg");
+      background-size: auto 57px, auto 78px, 1200px auto;
     }
   }
 }
