@@ -167,8 +167,8 @@ exports.default = gulp.series(
     scripts,
     sprite,
     createWebp),
-   gulp.series(
-     server,
-     watcher
-   )
+    gulp.series(
+      server,
+      watcher
+    )
 );
