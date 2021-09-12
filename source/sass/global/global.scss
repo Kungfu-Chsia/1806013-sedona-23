@@ -82,6 +82,7 @@ a {
   color: $white;
   text-transform: uppercase;
   border: none;
+  font-family: inherit;
 
   &:hover,
   &:focus {
@@ -115,9 +116,13 @@ fieldset {
   line-height: 26px;
   text-transform: uppercase;
   position: relative;
-  margin-left: 20px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
   }
+}
+
+::placeholder {
+  font-family: inherit;
 }

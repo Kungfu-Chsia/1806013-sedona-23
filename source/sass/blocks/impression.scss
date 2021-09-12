@@ -7,7 +7,7 @@
 }
 
 .impression__title {
-  margin-bottom: 37px;
+  margin-bottom: 27px;
   padding-top: 20px;
 
   @media (min-width: $tablet-width) {
@@ -24,10 +24,15 @@
 
 .impression__list {
   @include list-style;
+  padding-left: 4px;
 }
 
 .impression__option {
-  margin-bottom: 43px;
+  margin-bottom: 21px;
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
 }
 
 .impression__option label {
