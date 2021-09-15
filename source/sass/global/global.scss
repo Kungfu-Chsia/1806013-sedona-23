@@ -116,12 +116,15 @@ fieldset {
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  position: relative;
   text-align: center;
   top: -30px;
   background: $white;
-  width: 400px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    position: relative;
+  }
 }
 
 input,

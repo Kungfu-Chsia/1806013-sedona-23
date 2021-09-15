@@ -34,7 +34,7 @@
   min-height: 56px;
 
   @media (min-width: $tablet-width) {
-    min-height: 0;
+    min-height: 2px;
   }
 }
 
@@ -126,6 +126,7 @@
 
       &:hover {
         color: $hover-blue;
+        background-color: $white;
       }
 
       &:active {

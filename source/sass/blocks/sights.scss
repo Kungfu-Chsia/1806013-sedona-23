@@ -21,13 +21,10 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 76px;
-    padding-right: 89px;
+    width: 350px;
   }
 }
+
 
 .sights__label {
   font-size: 18px;
