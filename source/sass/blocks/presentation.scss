@@ -3,16 +3,16 @@
   line-height: 26px;
   text-align: center;
   margin-bottom: 28px;
-  padding-top: 32px;
+  margin-top: 32px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    padding-top: 56px;
+    margin-top: 56px;
     margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 54px;
+    margin-top: 60px;
     margin-bottom: 32px;
   }
 }

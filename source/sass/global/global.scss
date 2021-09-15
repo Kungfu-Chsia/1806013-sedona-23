@@ -69,7 +69,8 @@ img {
 p,
 h1,
 h2,
-h3 {
+h3,
+h5 {
   margin: 0;
 }
 
@@ -117,12 +118,13 @@ fieldset {
   text-transform: uppercase;
   position: relative;
   text-align: center;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 0;
-  }
+  top: -30px;
+  background: $white;
+  width: 400px;
+  margin: 0 auto;
 }
 
-::placeholder {
+input,
+textarea {
   font-family: inherit;
 }

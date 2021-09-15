@@ -6,7 +6,7 @@
   padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 5px;
+    position: relative;
   }
 }
 
@@ -18,10 +18,12 @@
   @media (min-width: $tablet-width) {
     margin-left: 9px;
     margin-right: 14px;
+    min-width: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 4px;
+    margin-left: 11px;
+    margin-right: 0;
   }
 }
 
@@ -30,11 +32,11 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 

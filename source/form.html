@@ -14,12 +14,18 @@
         <div class="container">
           <div class="main-nav__wrapper">
             <a class="main-nav__logo main-nav__logo--big" href="index.html">
-              <img
-                src="img/logotype-mobile.svg"
-                width="102"
-                height="84"
-                alt="Sity of Sedona"
+              <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="img/logotype-desktop.svg"
               />
+                <img
+                  src="img/logotype-mobile.svg"
+                  width="102"
+                  height="84"
+                  alt="Sity of Sedona"
+                />
+              </picture>
             </a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -68,10 +74,10 @@
           <form class="feedback__form" action="https://echo.htmlacademy.ru/courses" method="post">
             <div class="feedback__feedback-wrapper">
               <fieldset class="feedback__fieldset impression">
-                <legend class="impression__title form-common-title">
-                  ваше общее впечатление:
-                </legend>
                 <div class="container">
+                  <h5 class="impression__title">
+                    ваше общее впечатление:
+                  </h5>
                   <ul class="impression__list">
                     <li class="impression__option">
                       <input
@@ -114,10 +120,10 @@
               </fieldset>
 
               <fieldset class="feedback__fieldset personal">
-                <legend class="personal__title form-common-title">
-                    Представьтесь:
-                </legend>
                 <div class="container">
+                  <h5 class="personal__title">
+                    Представьтесь:
+                  </h5>
                   <div class="personal__wrapper">
                     <label class="personal__label" for="name">Имя*:</label>
                     <input
@@ -156,114 +162,122 @@
               </fieldset>
 
                 <fieldset class="feedback__fieldset contacts">
-                  <legend class="contacts__title form-common-title feedback__title--line">
-                      контактная информация:
-                  </legend>
-                    <div class="container">
-                      <div class="contacts__block contacts__block--phone">
-                        <label class="contacts__label contacts__label--tel" for="tel"
-                          ><span class="contacts__label-hidden">Контактный</span> телефон*:</label
-                        >
-                        <input
-                          class="contacts__input"
-                          type="tel"
-                          id="tel"
-                          name="tel"
-                          placeholder="Введите телефон"
-                          required
-                        />
-                      </div>
-                      <div class="contacts__block contacts__block--email">
-                        <label class="contacts__label" for="email"
-                          >Электронная почта*:</label
-                        >
-                        <input
-                          class="contacts__input"
-                          type="email"
-                          id="email"
-                          name="email"
-                          placeholder="Введите e-mail"
-                          required
-                        />
+                  <div class="container">
+                    <div class="feedback__inner">
+                      <h5 class="contacts__title form-common-title feedback__title--line">
+                        контактная информация:
+                      </h5>
+                      <div class="feedback__contacts-wrapper">
+                        <div class="contacts__block contacts__block--phone">
+                          <label class="contacts__label contacts__label--tel" for="tel"
+                            ><span class="contacts__label-hidden">Контактный</span> телефон*:</label
+                          >
+                          <input
+                            class="contacts__input"
+                            type="tel"
+                            id="tel"
+                            name="tel"
+                            placeholder="Введите телефон"
+                            required
+                          />
+                        </div>
+                        <div class="contacts__block contacts__block--email">
+                          <label class="contacts__label" for="email"
+                            >Электронная почта*:</label
+                          >
+                          <input
+                            class="contacts__input"
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Введите e-mail"
+                            required
+                          />
+                        </div>
                       </div>
                     </div>
+                  </div>
                 </fieldset>
 
-              <div class="container">
                 <fieldset class="feedback__fieldset sights">
-                  <legend class="sights__title form-common-title feedback__title--line">
-                      посещённые достопримечательности:
-                  </legend>
-                    <ul class="sights__list">
-                      <li class="sights__option">
-                        <input
-                          hidden
-                          class="sights__input-checkbox"
-                          type="checkbox"
-                          name="bridge"
-                          id="sights-bridge"
-                          checked
-                        />
-                        <label class="sights__label" for="sights-bridge"
-                          >Мост Дьявола</label
-                        >
-                      </li>
-                      <li class="sights__option">
-                        <input
-                          hidden
-                          class="sights__input-checkbox"
-                          type="checkbox"
-                          name="mountain"
-                          id="sights-mountain"
-                          checked
-                        />
-                        <label class="sights__label" for="sights-mountain"
-                          >Гора-Колокол</label
-                        >
-                      </li>
-                      <li class="sights__option">
-                        <input
-                          hidden
-                          class="sights__input-checkbox"
-                          type="checkbox"
-                          name="park"
-                          id="sights-park"
-                          checked
-                        />
-                        <label class="sights__label" for="sights-park"
-                          >Слайд-парк</label
-                        >
-                      </li>
-                      <li class="sights__option">
-                        <input
-                          hidden
-                          class="sights__input-checkbox"
-                          type="checkbox"
-                          name="mounts"
-                          id="sights-mounts"
-                        />
-                        <label class="sights__label" for="sights-mounts"
-                          >Красные скалы</label
-                        >
-                      </li>
-                    </ul>
+                  <div class="container">
+                    <div class="feedback__inner">
+                      <h5 class="sights__title form-common-title feedback__title--line">
+                        посещённые достопримечательности:
+                      </h5>
+                      <ul class="sights__list">
+                        <li class="sights__option">
+                          <input
+                            hidden
+                            class="sights__input-checkbox"
+                            type="checkbox"
+                            name="bridge"
+                            id="sights-bridge"
+                            checked
+                          />
+                          <label class="sights__label" for="sights-bridge"
+                            >Мост Дьявола</label
+                          >
+                        </li>
+                        <li class="sights__option">
+                          <input
+                            hidden
+                            class="sights__input-checkbox"
+                            type="checkbox"
+                            name="mountain"
+                            id="sights-mountain"
+                            checked
+                          />
+                          <label class="sights__label" for="sights-mountain"
+                            >Гора-Колокол</label
+                          >
+                        </li>
+                        <li class="sights__option">
+                          <input
+                            hidden
+                            class="sights__input-checkbox"
+                            type="checkbox"
+                            name="park"
+                            id="sights-park"
+                            checked
+                          />
+                          <label class="sights__label" for="sights-park"
+                            >Слайд-парк</label
+                          >
+                        </li>
+                        <li class="sights__option">
+                          <input
+                            hidden
+                            class="sights__input-checkbox"
+                            type="checkbox"
+                            name="mounts"
+                            id="sights-mounts"
+                          />
+                          <label class="sights__label" for="sights-mounts"
+                            >Красные скалы</label
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </fieldset>
-              </div>
-              <div class="container">
-                <fieldset class="feedback__fieldset emotion">
-                  <legend class="emotion__title form-common-title feedback__title--line">
-                      Опишите свои эмоции:
-                  </legend>
 
+                <fieldset class="feedback__fieldset emotion">
+                  <div class="container">
+                    <div class="feedback__inner">
+                    <h5 class="emotion__title form-common-title feedback__title--line">
+                      Опишите свои эмоции:
+                    </h5>
                       <textarea
                         class="emotion__textarea"
                         id="letter"
                         name="letter"
                         placeholder="Опишите подробно все свои восторги "
                       ></textarea>
-
+                      </div>
+                  </div>
                 </fieldset>
-              </div>
+
             </div>
             <div class="container">
               <div class="send-feedback">

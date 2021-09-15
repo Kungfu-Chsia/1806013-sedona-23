@@ -22,15 +22,25 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    .pipe(postcss([autoprefixer(), csso]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+const devStyles = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/css"))
+    .pipe(sync.stream());
+}
+
+exports.devStyles = devStyles;
 
 //HTML
 const html = () => {
@@ -52,13 +62,13 @@ const scripts = () => {
 exports.scripts = scripts;
 
 //Images
-const optimazeImage = () => {
+const optimizeImage = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(squoosh())
     .pipe(gulp.dest("build/img"))
 }
 
-exports.optimazeImage = optimazeImage;
+exports.optimizeImage = optimizeImage;
 
 const copyImage = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
@@ -78,7 +88,7 @@ exports.createWebp = createWebp;
 
 //Sprite
 const sprite = () => {
-  return gulp.src("source/img/icons/*.svg")
+  return gulp.src("source/img/icon-*.svg")
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
@@ -105,8 +115,9 @@ exports.copy = copy;
 
 
 //Clean
-const clean = () => {
-  return delete("build")
+const clean = async (done) => {
+  await del(["build"]);
+  done();
 }
 
 exports.clean = clean;
@@ -128,24 +139,18 @@ const server = (done) => {
 
 exports.server = server;
 
-//Reload
-
-const reload = (done) =>{
-  sync.reload()
-}
-
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/sass/**/*.scss", gulp.series("devStyles"));
   gulp.watch("source/js/script.js", gulp.series("scripts"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
 const build = gulp.series(
-//  clean,
+  clean,
   copy,
-  optimazeImage,
+  optimizeImage,
   gulp.parallel(
     styles,
     html,
@@ -158,11 +163,11 @@ exports.build = build;
 
 
 exports.default = gulp.series(
-//  clean,
+  clean,
   copy,
   copyImage,
   gulp.parallel(
-    styles,
+    devStyles,
     html,
     scripts,
     sprite,

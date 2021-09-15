@@ -52,8 +52,7 @@
   line-height: 24px;
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 3px;
-    padding-top: 17px;
+    padding-top: 12px;
   }
 }
 
@@ -69,13 +68,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 21px;
+    margin-bottom: 18px;
   }
 }
 
 .photos__img {
   line-height: 0;
   width: auto;
+  display: block;
 
   @media (min-width: $tablet-width) {
     min-width: 324px;
@@ -101,7 +101,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $extralight-grey;
-    padding: 10px 12px 0 19px;
+    padding: 10px 20px 0;
     justify-content: space-between;
 
     & .photos__caption-rel {

@@ -6,10 +6,6 @@
   @media (min-width: $tablet-width) {
     order: 0;
   }
-
-  @media (min-width: $desktop-width) {
-    width: 960px;
-  }
 }
 
 .contacts__wrapper {
@@ -49,16 +45,16 @@
 }
 
 .contacts__input {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: none;
   font-weight: 700;
   border: none;
   background-color: $extralight-grey;
   margin-bottom: 20px;
-  padding-top: 27px;
+  padding-top: 18px;
   padding-left: 22px;
-  padding-bottom: 5px;
+  padding-bottom: 14px;
   position: relative;
 
   &::placeholder {
