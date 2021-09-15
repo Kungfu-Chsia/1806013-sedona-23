@@ -62,14 +62,15 @@ img {
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 120px;
+    padding: 0 51px;
   }
 }
 
 p,
 h1,
 h2,
-h3 {
+h3,
+h5 {
   margin: 0;
 }
 
@@ -82,6 +83,7 @@ a {
   color: $white;
   text-transform: uppercase;
   border: none;
+  font-family: inherit;
 
   &:hover,
   &:focus {
@@ -114,10 +116,18 @@ fieldset {
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  position: relative;
-  margin-left: 20px;
+  text-align: center;
+  top: -30px;
+  background: $white;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
+    width: 400px;
+    position: relative;
   }
+}
+
+input,
+textarea {
+  font-family: inherit;
 }

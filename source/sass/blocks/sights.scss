@@ -1,9 +1,3 @@
-.sights {
-  @media (min-width: $desktop-width) {
-    width: 960px;
-  }
-}
-
 .sights__list {
   @include list-style;
 
@@ -23,21 +17,20 @@
 
 .sights__title {
   padding-top: 15px;
-  padding-bottom: 36px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    width: 356px;
     text-align: center;
-    padding-top: 38px;
+    width: 350px;
   }
 }
+
 
 .sights__label {
   font-size: 18px;
   line-height: 24px;
   text-transform: none;
-  padding-bottom: 54px;
+  padding-bottom: 25px;
   position: relative;
   display: block;
   cursor: pointer;
@@ -66,8 +59,8 @@
   &::before {
     content: "";
     flex-shrink: 0;
-    width: 46px;
-    height: 46px;
+    width: 55px;
+    height: 55px;
     margin-right: 26px;
     border-radius: 1%;
     background-repeat: no-repeat;

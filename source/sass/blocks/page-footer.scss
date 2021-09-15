@@ -6,11 +6,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 36px;
+    padding: 3px 0 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 120px 36px 104px;
+    padding: 0 67px 36px 68px;
   }
 }
 
@@ -28,7 +28,7 @@
 .page-footer__list {
   display: flex;
   justify-content: space-between;
-  max-width: 170px;
+  max-width: 153px;
 
   @include list-style;
   margin: 0 auto;
@@ -44,7 +44,7 @@
 }
 
 .page-footer__social {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

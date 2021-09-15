@@ -2,17 +2,42 @@
   border: none;
   cursor: pointer;
   background: none;
+  padding: 0;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .likes__counter {
   margin-left: 14px;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 9px;
+    margin-right: 14px;
+    min-width: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 11px;
+    margin-right: 0;
+  }
 }
 
 .likes {
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .likes__img {
