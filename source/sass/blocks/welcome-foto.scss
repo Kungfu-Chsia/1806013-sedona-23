@@ -17,6 +17,16 @@
     background-repeat: no-repeat;
   }
 
+  &--mini .main-nav--opened {
+    height: 388px;
+    background-color: $down-blue;
+    background-image: url("../img/intro-triangle.svg"),
+      url("../img/sedona-s.svg"),
+      url("../img/back-s.jpg");
+    background-position: center bottom, center 174px, center bottom;
+    background-repeat: no-repeat;
+  }
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/intro-triangle.svg"),
       url("../img/sedona-m.svg"),

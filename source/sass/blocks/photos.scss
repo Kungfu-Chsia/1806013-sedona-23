@@ -20,7 +20,7 @@
   flex-direction: column;
   margin: 0 auto;
   border-bottom: 1px solid $disabled;
-  padding-bottom: 11px;
+  padding-bottom: 12px;
   padding-top: 24px;
 
   @media (min-width: $tablet-width) {
@@ -61,7 +61,7 @@
   line-height: 24px;
   font-weight: 400;
   text-transform: none;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 19px;
@@ -97,7 +97,7 @@
 }
 
 .photos__caption {
-  padding-top: 6px;
+  padding-top: 9px;
 
   @media (min-width: $tablet-width) {
     background-color: $extralight-grey;
