@@ -3,17 +3,93 @@
   line-height: 26px;
   font-weight: bold;
   color: $black;
-  /*padding: 0 72px;*/
 
   &--closed {
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
     .main-nav__list {
       display: none;
+
+      @media (min-width: $tablet-width) {
+        display: flex;
+      }
+    }
+
+    .main-nav__wrapper {
+      display: block;
+    }
+
+    .main-nav__toggle {
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+/*
+    .main-nav--nojs .main-nav__wrapper {
+      display: block;
+    }
+*/
+
+    &.main-nav--nojs {
+      .main-nav__wrapper {
+        display: block;
+      }
+
+      .main-nav__toggle {
+        display: block;
+
+        @media (min-width: $tablet-width) {
+          display: none;
+        }
+      }
+
+      .main-nav__list {
+        @media (min-width: $tablet-width) {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  &--opened {
+    .container {
+      padding: 0;
+    }
+
+    .main-nav__list {
+      position: absolute;
+
+      @media (min-width: $tablet-width) {
+        position: relative;
+      }
+    }
+
+    .main-nav__wrapper {
+      display: block;
     }
   }
 
   &--nojs {
+    .container {
+      padding: 0;
+    }
+
     .main-nav__toggle {
       display: none;
+    }
+
+    .main-nav__list {
+      position: static;
+    }
+
+    .main-nav__wrapper {
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+      }
     }
   }
 
@@ -32,9 +108,11 @@
 
 .main-nav__wrapper {
   min-height: 56px;
+  display: none;
 
   @media (min-width: $tablet-width) {
     min-height: 2px;
+    display: block;
   }
 }
 
@@ -54,9 +132,8 @@
 
 .main-nav__list {
   @include list-style;
-
-  padding: 0;
-  padding-bottom: 14px;
+  position: static;
+  padding-bottom: 0;
   font-size: 18px;
   line-height: 28px;
   text-align: center;
@@ -66,7 +143,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
@@ -77,6 +153,7 @@
     line-height: 26px;
     margin-left: 14px;
     padding-right: 7px;
+    position: absolute;
   }
 
   @media (min-width: $desktop-width) {

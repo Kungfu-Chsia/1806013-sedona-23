@@ -20,8 +20,8 @@
   flex-direction: column;
   margin: 0 auto;
   border-bottom: 1px solid $disabled;
-  padding-bottom: 11px;
-  padding-top: 24px;
+  padding-bottom: 12px;
+  padding-top: 26px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -64,7 +64,7 @@
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 19px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {

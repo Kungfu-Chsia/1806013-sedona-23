@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-top: 56px;
+    margin-top: 53px;
     margin-bottom: 31px;
   }
 
@@ -39,7 +39,7 @@
   background-repeat: no-repeat;
   height: 201px;
   position: relative;
-  margin-bottom: 105px;
+  margin-bottom: 145px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/video-s@2x.jpg");
@@ -52,26 +52,26 @@
     margin: 0 auto;
     margin-bottom: 76px;
     width: 648px;
-  }
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/video-m@2x.jpg");
-    background-size: cover;
-    margin-left: 60px;
-    margin-right: 60px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-m@2x.jpg");
+      background-size: cover;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/video-l.jpg");
     margin-bottom: 121px;
     width: 800px;
-  }
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/video-l@2x.jpg");
-    background-size: cover;
-    margin-left: 200px;
-    margin-right: 200px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-l@2x.jpg");
+      background-size: cover;
+      margin-left: 200px;
+      margin-right: 200px;
+    }
   }
 }
 
@@ -139,7 +139,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 77px;
+  left: 57px;
   border: 5px solid $white;
   border-radius: 50%;
   cursor: pointer;
@@ -162,10 +162,11 @@
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
-  padding: 23px;
+  padding: 17px;
+  padding-top: 21px;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 37px;
+    padding: 11px 32px;
     transform: translateY(50%);
   }
 }
@@ -229,12 +230,12 @@
 }
 
 .presentation__subtitles {
-  margin-left: 111px;
+  margin-left: 106px;
 
   @media (min-width: $tablet-width) {
     display: block;
     background: none;
-    margin-left: 413px;
+    margin-left: 432px;
   }
 
   @media (min-width: $desktop-width) {
