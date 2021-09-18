@@ -1,6 +1,6 @@
 .intro {
   padding-top: 32px;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
@@ -11,14 +11,14 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 55px;
-    padding-bottom: 43px;
+    padding-bottom: 42px;
   }
 }
 
 .intro__slogan {
   max-width: 260px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 33px;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -26,15 +26,21 @@
   @media (min-width: $tablet-width) {
     max-width: 520px;
     font-size: 21px;
+    margin-bottom: 29px;
 
     &--foto {
       font-size: 30px;
       margin-top: 22px;
-      margin-bottom: 33px;
+      margin-bottom: 29px;
 
       @media (min-width: $desktop-width) {
         margin-top: 48px;
+        margin-bottom: 34px;
       }
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 34px;
     }
   }
 }

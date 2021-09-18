@@ -26,12 +26,6 @@
   }
 }
 
-.feedback__inner {
-  @media (min-width: $tablet-width) {
-    border-top: 1px solid $line-grey;
-  }
-}
-
 .feedback__feedback-wrapper {
   display: flex;
   flex-direction: column;
@@ -43,8 +37,15 @@
 }
 
 .feedback__title {
-  margin-top: 55px;
+  margin-top: 37px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 86px;
+    margin-bottom: 3px;
+  }
 }
 
 .feedback__text {

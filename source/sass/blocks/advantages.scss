@@ -1,6 +1,6 @@
 .advantages {
-  margin-bottom: 23px;
-  margin-top: 9px;
+  margin-bottom: 22px;
+  margin-top: 7px;
 
   @media (min-width: $tablet-width) {
     margin-top: 37px;
@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 34px;
+    margin-top: 37px;
     margin-bottom: 80px;
   }
 }
@@ -88,6 +88,16 @@
         }
       }
     }
+  }
+}
+
+.advantages__wrapper {
+  @media (min-width: $tablet-width) {
+    margin: 0 -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 

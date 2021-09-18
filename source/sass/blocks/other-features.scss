@@ -5,6 +5,11 @@
 
 .other-features__wrapper {
   @media (min-width: $tablet-width) {
+    margin: 0 -21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
     padding: 0 8px;
   }
 }
@@ -13,7 +18,7 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0;
-  padding-top: 24px;
+  padding-top: 26px;
 
   @media (min-width: $tablet-width) {
     max-width: 130px;
@@ -22,7 +27,7 @@
     padding-top: 37px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 40px;
   }
 }
@@ -65,12 +70,12 @@
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 11px;
-    margin-bottom: 22px;
+    margin-top: 14px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 14px;
+    margin-top: 16px;
   }
 }
 
@@ -86,7 +91,7 @@
 }
 
 .other-features__item {
-  padding-bottom: 26px;
+  padding-bottom: 25px;
   border-bottom: 1px solid $line-grey;
 
   &:last-child {

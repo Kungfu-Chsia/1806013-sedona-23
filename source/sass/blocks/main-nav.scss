@@ -26,29 +26,27 @@
         display: none;
       }
     }
-/*
-    .main-nav--nojs .main-nav__wrapper {
+  }
+  // .main-nav--nojs .main-nav__wrapper {
+  //   display: block;
+  // }
+
+  &--closed.main-nav--nojs {
+    .main-nav__wrapper {
       display: block;
     }
-*/
 
-    &.main-nav--nojs {
-      .main-nav__wrapper {
-        display: block;
+    .main-nav__toggle {
+      display: block;
+
+      @media (min-width: $tablet-width) {
+        display: none;
       }
+    }
 
-      .main-nav__toggle {
-        display: block;
-
-        @media (min-width: $tablet-width) {
-          display: none;
-        }
-      }
-
-      .main-nav__list {
-        @media (min-width: $tablet-width) {
-          display: flex;
-        }
+    .main-nav__list {
+      @media (min-width: $tablet-width) {
+        display: flex;
       }
     }
   }

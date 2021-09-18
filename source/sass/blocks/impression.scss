@@ -9,11 +9,16 @@
 .impression__title {
   margin-bottom: 27px;
   padding-top: 20px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 303px;
     padding-top: 0;
-    margin-left: 60px;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: start;
+    margin-top: 86px;
+    margin-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,6 +36,10 @@
   margin-bottom: 21px;
 
   &:last-child {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $tablet-width) {
     margin-bottom: 30px;
   }
 }

@@ -1,5 +1,5 @@
 .emotion__textarea {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: none;
   text-align: start;
@@ -7,7 +7,7 @@
   font-family: inherit;
   border: none;
   background-color: $extralight-grey;
-  padding: 13px 23px 29px 21px;
+  padding: 12px 23px 0 21px;
   height: 160px;
   width: 100%;
 
@@ -22,6 +22,10 @@
   &:focus {
     background-color: $white;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 23px 0 21px;
+  }
 }
 
 .emotion__title {
@@ -32,10 +36,18 @@
     text-align: center;
     padding-left: 60px;
     padding-right: 62px;
+    font-size: 21px;
+    line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 59px;
     padding-right: 61px;
+  }
+}
+
+.emotion__inner {
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $line-grey;
   }
 }
