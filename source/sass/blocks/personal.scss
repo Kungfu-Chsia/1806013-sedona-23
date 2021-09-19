@@ -23,6 +23,14 @@
   @media (min-width: $tablet-width) {
     margin-left: -60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -97px;
+
+    &:last-child {
+      margin-bottom: 6px;
+    }
+  }
 }
 
 .personal__title {
@@ -38,7 +46,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 120px;
+    margin-left: -40px;
+    margin-top: 55px;
   }
 }
 

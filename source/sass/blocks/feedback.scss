@@ -46,6 +46,10 @@
     margin-top: 86px;
     margin-bottom: 3px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 143px;
+  }
 }
 
 .feedback__text {

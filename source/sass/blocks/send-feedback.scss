@@ -17,6 +17,10 @@
     font-weight: 400;
     padding-bottom: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 31px;
+  }
 }
 
 .send-feedback__button {
@@ -35,7 +39,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 102px;
-    padding: 19px 132px 14px 133px;
+    margin-bottom: 105px;
+    padding: 19px 149px 11px 148px;
   }
 }

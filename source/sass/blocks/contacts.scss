@@ -16,6 +16,7 @@
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
+    margin-top: 43px;
   }
 }
 
@@ -52,6 +53,11 @@
   padding-bottom: 8px;
   position: relative;
   padding-left: 22px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 14px;
+    padding-left: 0;
+  }
 }
 
 .contacts__input {
@@ -90,6 +96,7 @@
 
   @media (min-width: $desktop-width) {
     width: 257px;
+    padding-left: 24px;
   }
 }
 
@@ -133,5 +140,11 @@
 .contacts__label-hidden {
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.contacts__block--phone {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
   }
 }
