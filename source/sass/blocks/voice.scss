@@ -1,7 +1,43 @@
-.feedback-voice {
+.voice {
   border-bottom: 1px solid $line-grey;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+  }
+}
+
+.voice__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.voice__title {
+  margin-top: 37px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 86px;
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 143px;
+  }
+}
+
+.voice__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 443px;
+    margin: 0 auto;
   }
 }
