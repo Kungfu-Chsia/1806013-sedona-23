@@ -1,0 +1,7 @@
+.feedback-voice {
+  border-bottom: 1px solid $line-grey;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}

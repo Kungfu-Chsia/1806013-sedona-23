@@ -15,11 +15,11 @@
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
-    padding-bottom: 21px;
+    padding-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 31px;
+    padding-bottom: 41px;
   }
 }
 
@@ -33,13 +33,13 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
-    margin-top: 64px;
+    margin-top: 56px;
     padding: 19px 77px 14px 67px;
     margin-bottom: 94px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 105px;
-    padding: 19px 149px 11px 148px;
+    padding: 18px 149px 11px 148px;
   }
 }

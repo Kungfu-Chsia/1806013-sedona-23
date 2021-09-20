@@ -1,17 +1,11 @@
-.feedback {
-  border-bottom: 1px solid $line-grey;
 
-  @media (min-width: $tablet-width) {
-    border-bottom: none;
-  }
-}
 
 .feedback__form {
   display: flex;
   flex-direction: column;
 }
 
-.feedback__wrapper {
+.feedback-voice__wrapper {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
@@ -36,7 +30,7 @@
   }
 }
 
-.feedback__title {
+.feedback-voice__title {
   margin-top: 37px;
   margin-bottom: 28px;
 
@@ -52,7 +46,7 @@
   }
 }
 
-.feedback__text {
+.feedback-voice__text {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;

@@ -1,118 +1,86 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="page-header">
-      <nav class="main-nav main-nav--opened main-nav--nojs">
-        <div class="container">
-          <div class="main-nav__wrapper">
-            <a class="main-nav__logo main-nav__logo--big" href="index.html">
-              <picture>
-                <source
-                media="(min-width: 1200px)"
-                srcset="img/logotype-desktop.svg"
-              />
-                <img
-                  src="img/logotype-mobile.svg"
-                  width="102"
-                  height="84"
-                  alt="Sity of Sedona"
-                />
-              </picture>
-            </a>
-            <button class="main-nav__toggle" type="button">
+        <nav class="main-nav main-nav--closed">
+            <div class="container">
+                <div class="main-nav__wrapper">
+                    <a class="main-nav__logo main-nav__logo--big" href="index.html">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg" />
+                            <img src="img/logotype-mobile.svg" width="102" height="84" alt="Sity of Sedona" />
+                        </picture>
+                    </a>
+                    <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
-          </div>
-          <ul class="main-nav__list">
-            <li
-              class="
+                </div>
+                <ul class="main-nav__list">
+                    <li class="
                 main-nav__item
                 button
-                main-nav__item--button main-nav__item--current
-              "
-            >
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item button main-nav__item--button">
-              <a href="catalog.html">Фото и видео</a>
-            </li>
-            <li class="main-nav__item button main-nav__item--button">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="main-nav__item button main-nav__item--button">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+                main-nav__item--button
+              ">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="main-nav__item button main-nav__item--button">
+                        <a href="catalog.html">Фото и видео</a>
+                    </li>
+                    <li class="main-nav__item button main-nav__item--button main-nav__item--current">
+                        <a href="form.html">Форма отзыва</a>
+                    </li>
+                    <li class="main-nav__item button main-nav__item--button">
+                        <a href="#">HTML Academy</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main class="page-main">
-      <section class="welcome-foto welcome-foto--mini">
-        <h1 class="visually-hidden">Добро пожаловать в городок Седона</h1>
-      </section>
-      <section class="feedback">
-        <div class="feedback__wrapper">
-          <h2 class="feedback__title form-common-title">Оставьте свой отзыв</h2>
-          <p class="feedback__text">
-            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
-            посещенных вами достопримечательностях
-          </p>
-        </div>
-      </section>
+        <section class="welcome-foto welcome-foto--mini">
+            <h1 class="visually-hidden">Добро пожаловать в городок Седона</h1>
+        </section>
+        <section class="feedback-voice">
+            <div class="feedback-voice__wrapper">
+                <h2 class="feedback-voice__title form-common-title">Оставьте свой отзыв</h2>
+                <p class="feedback-voice__text">
+                    Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+                </p>
+            </div>
+        </section>
 
-      <section class="feedback-plan">
-        <h2 class="visually-hidden">Форма отзыва</h2>
-          <form class="feedback__form" action="https://echo.htmlacademy.ru/courses" method="post">
-            <div class="feedback__feedback-wrapper">
-              <fieldset class="feedback__fieldset impression">
-                <div class="container">
-                  <h5 class="impression__title">
-                    ваше общее впечатление:
-                  </h5>
-                  <ul class="impression__list">
-                    <li class="impression__option">
-                      <input
-                        hidden
-                        class="impression__input-radio"
-                        type="radio"
-                        name="impression"
-                        value="positive"
-                        id="impression-positive"
-                        checked
-                      />
-                      <label for="impression-positive">Скорее положительное</label>
-                    </li>
-                    <li class="impression__option">
-                      <input
-                        hidden
-                        class="impression__input-radio"
-                        type="radio"
-                        name="impression"
-                        value="negative"
-                        id="impression-negative"
-                      />
-                      <label for="impression-negative">Скорее отрицательное</label>
-                    </li>
-                    <li class="impression__option">
-                      <input
-                        hidden
-                        class="impression__input-radio"
-                        type="radio"
-                        name="impression"
-                        value="cant-answer"
-                        id="impression-cant-answer"
-                      />
-                      <label for="impression-cant-answer"
-                        >Затрудняюсь ответить</label
+        <section class="feedback">
+            <h2 class="visually-hidden">Форма отзыва</h2>
+            <form class="feedback__form" action="https://echo.htmlacademy.ru/courses" method="post">
+                <div class="feedback__feedback-wrapper">
+                    <fieldset class="feedback__fieldset impression">
+                        <div class="container">
+                            <h5 class="impression__title">
+                                ваше общее впечатление:
+                            </h5>
+                            <ul class="impression__list">
+                                <li class="impression__option">
+                                    <input hidden class="impression__input-radio" type="radio" name="impression" value="positive" id="impression-positive" checked />
+                                    <label for="impression-positive">Скорее положительное</label>
+                                </li>
+                                <li class="impression__option">
+                                    <input hidden class="impression__input-radio" type="radio" name="impression" value="negative" id="impression-negative" />
+                                    <label for="impression-negative">Скорее отрицательное</label>
+                                </li>
+                                <li class="impression__option">
+                                    <input hidden class="impression__input-radio" type="radio" name="impression" value="cant-answer" id="impression-cant-answer" />
+                                    <label for="impression-cant-answer">Затрудняюсь ответить</label
                       >
                     </li>
                   </ul>
@@ -126,29 +94,14 @@
                   </h5>
                   <div class="personal__wrapper">
                     <label class="personal__label" for="name">Имя*:</label>
-                    <input
-                      class="personal__input"
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="Петр"
-                      required
-                    />
-                  </div>
-                  <div class="personal__wrapper">
-                    <label class="personal__label" for="surname">Фамилия*:</label>
-                    <input
-                      class="personal__input"
-                      type="text"
-                      id="surname"
-                      name="surname"
-                      placeholder="Иванов"
-                      required
-                    />
-                  </div>
-                  <div class="personal__wrapper">
-                    <label class="personal__label" for="middlename"
-                      >Отчество:</label
+                                    <input class="personal__input" type="text" id="name" name="name" placeholder="Петр" required />
+                        </div>
+                        <div class="personal__wrapper">
+                            <label class="personal__label" for="surname">Фамилия*:</label>
+                            <input class="personal__input" type="text" id="surname" name="surname" placeholder="Иванов" required />
+                        </div>
+                        <div class="personal__wrapper">
+                            <label class="personal__label" for="middlename">Отчество:</label
                     >
                     <input
                       class="personal__input"

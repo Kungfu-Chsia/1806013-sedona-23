@@ -18,7 +18,7 @@
     line-height: 26px;
     text-align: start;
     margin-top: 86px;
-    margin-bottom: 61px;
+    margin-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,18 +30,25 @@
 
 .impression__list {
   @include list-style;
-  padding-left: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .impression__option {
-  margin-bottom: 21px;
+  margin-bottom: 16px;
 
   &:last-child {
-    margin-bottom: 33px;
+    margin-bottom: 29px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 33px;
+    }
   }
 }
 
@@ -67,12 +74,16 @@
   &::before {
     content: "";
     flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    margin-right: 26px;
+    width: 53px;
+    height: 53px;
+    margin-right: 23px;
     border: 15px solid $extralight-grey;
     border-radius: 50%;
     background-color: $extralight-grey;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 4px;
+    }
   }
 }
 
