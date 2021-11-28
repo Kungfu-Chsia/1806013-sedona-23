@@ -6,6 +6,7 @@
   @media (min-width: $tablet-width) {
     order: 0;
     margin-bottom: 37px;
+    margin-top: 57px;
   }
 }
 
@@ -126,7 +127,10 @@
 
   @media (min-width: $tablet-width) {
     right: unset;
-    bottom: 24px;
+    bottom: 23px;
+  }
+  @media (min-width: $desktop-width) {
+    height: 57px;
   }
 }
 

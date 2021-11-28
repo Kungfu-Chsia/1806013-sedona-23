@@ -1,8 +1,15 @@
 .voice {
   border-bottom: 1px solid $line-grey;
+  margin-top: 37px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    margin-top: 86px;
+    margin-bottom: 86px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 143px;
   }
 }
 
@@ -15,18 +22,12 @@
 }
 
 .voice__title {
-  margin-top: 37px;
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 30px;
-    margin-top: 86px;
     margin-bottom: 3px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 143px;
   }
 }
 
